@@ -1,0 +1,17 @@
+﻿#ninjas
+{
+    border:1px solid #999;
+    -webkit-box-shadow: 2px 2px #000    
+}
+
+#ninjaP
+{
+    font-family: Verdana;
+    font-size: 2em;
+    text-shadow: 1px 3px #999;    
+}
+.emph
+{
+    color: #e07338;
+    font-size: 1.5em;
+}

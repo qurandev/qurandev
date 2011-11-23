@@ -1,0 +1,164 @@
+﻿<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="static/css/style.css" />
+
+	<script type="text/javascript" src="static/js/jquery/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="static/js/jquery/jquery.ba-bbq.min.js"></script>
+	<script type="text/javascript" src="static/js/json2.js"></script>
+	<script type="text/javascript" src="static/js/quran-data.js"></script>
+	<script type="text/javascript" src="static/js/Q-UI.js"></script>
+	<script type="text/javascript" src="static/js/Q-Data.js"></script>
+	<script type="text/javascript" src="static/js/Q-DataLoaders.js"></script>
+	<script type="text/javascript" src="static/js/Q-SurasNavUI.js"></script>
+	<script type="text/javascript" src="static/js/Q-Search.js"></script>
+	<script type="text/javascript" src="static/js/Q-GrammarAndImages.js"></script>
+	<script type="text/javascript" src="static/js/Qscripts.js"></script>	
+	<!-- Goog analytics -->
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-23462050-1']);
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+</head>
+
+
+<body>
+<!--	<h2><span onclick="location.href = '/#';">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ </span></h2> -->
+
+	<div class="bbq" style="float: left; border-style: dotted; border-width: 1px; margin-top: 35px; padding-top: 5px; padding-right: 5px; padding-left: 5px;">
+		<div class="bbq-nav bbq-nav-top">
+			Sura:
+			<p class="controls">
+				<a href="javascript:jumpToBeginOrEnd(true)">|&lt;</a>&nbsp;
+				<a href="javascript:rrev()">&lt;&lt;</a>&nbsp;
+				<a href="javascript:prev()">&lt;</a>&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input id="btn" type="button" text="Go" value="Go" onclick="Go(this);" style="display: none" />
+				<a href="javascript:next()">&gt;</a>&nbsp;
+				<a href="javascript:ffwd()">&gt;&gt;</a>&nbsp;
+				<a href="javascript:jumpToBeginOrEnd(false)">&gt;|</a>
+			</p><BR/>
+			<a href="#sura?1">sura 1</a>&nbsp;&nbsp;
+			<a href="#sura?1,2">1,2</a>&nbsp;&nbsp;
+			<a href="#sura?1,2,3">1,2,3</a><br>
+			<a href="#grammar()">grammar()</a>&nbsp;
+			<a href="#repeats()">repeats()</a>&nbsp;
+			<a href="#getTransNext()">trans</a><br>  
+			<a href="#sura?2,255">AyatAlKursi</a> 
+			<a href="#sura?7,180,2:3" title=#sura?7,180,2>AsmaUlHusna</a>
+			<br><br>
+			
+			Searches: 
+			<a href="#search?Allah">Allah</a>&nbsp;&nbsp;
+			<a href="#search?muHamad;AHmed">muHamad</a><br>
+			<a href="#search?Allahu%20yuHibu" title='Allah loves...'>Allahu yuHibu...</a>&nbsp;&nbsp;
+			<a href="#search?Allahu%20lA%20yuHibu" title="Allah doesn't love...">lA yuHibu...</a><br>
+			<a href="#search?AlSrAT;AlSrAT%20Almstqym" title="Siraat al Mustaqeem">AlSrAT Almstqym</a>&nbsp;&nbsp;- 
+			<a href="#search?sabiyl" title="sabiyl">sabiyl</a><br>
+			<a href="#search?jnt;jnAt" title="Jannath">janat</a>&nbsp;&nbsp;- 
+			<a href="#search?jhnm" title="Jahannum">jahanum</a>&nbsp;&nbsp;
+			<a href="#search?rbnA;wrbnA;brbnA" title="Jahannum">rbnA</a>
+			<br>
+			
+			<a href="javascript:void();" onclick="location.href='#search?' + this.innerHTML">Adam</a>&nbsp;&nbsp;
+			<a href="javascript:void();" onclick="location.href='#search?' + this.innerHTML">AbrAhym</a>&nbsp;&nbsp;
+			<a href="javascript:void();" onclick="location.href='#search?' + this.innerHTML">AsmAEyl</a>
+			<br>
+			<a href="javascript:void();" onclick="location.href='#search?' + this.innerHTML">nuwH</a>&nbsp;&nbsp;
+			<a href="javascript:void();" onclick="location.href='#search?' + this.innerHTML">muwsa</a>&nbsp;&nbsp;
+			<a href="javascript:void();" onclick="location.href='#search?' + this.innerHTML">sulymAn</a>
+			<br>
+			<a href="javascript:void();" onclick="location.href='#search?' + this.innerHTML">maryam</a>&nbsp;&nbsp;
+			<a href="javascript:void();" onclick="location.href='#search?' + this.innerHTML">Eysa</a>&nbsp;&nbsp;
+			<a href="javascript:void();" onclick="location.href='#search?' + this.innerHTML">yuwsuf</a>
+			<a href="javascript:void();" onclick="location.href='#search?' + this.innerHTML">dAw,d</a>
+			<br>
+			
+			<a href="#search?fbAY%20Hdyv]%20;fbAY%20%27AlA%27%20rbkmA%20tk*bAn" title="Surah Rehman & other suras where Fabiayyi aala">
+				<small>fbAY 'AlA' rbkmA tk*bAn</small></a><br>
+			<a href="#search?yasarnA%20Alqur'An">yasarnA Alqur'An</a><br>
+			<a href="#search?fahal%20min%20mudakir">fahal min mudakir</a><br>
+			<a href="#search?AlrHym%20Algfwr;Algfwr%20AlrHym" title="Gem: ArRaheemul Ghafoor vs Ghafoorur Raheem - compare occurences">
+				<small>AlrHym Algfwr;Algfwr AlrHym</small></a><br>
+			<a href="#search?warabuka%20fkbr" title="sura?74,3 - Palindrome example">warabuka fkbr</a><br> 
+			<a href="#search?lahwa%20AlHadyv" title="sura?31,6,5:6">lahwa AlHadyv</a><br>
+			<a href="#search?An%20$A'%20Allh" title='Search for occurences of InShaAllah'>An $A' Allh</a><br>
+
+			<a href="javascript:void();" onclick="location.href='#search?' + this.innerHTML">qur'An</a>&nbsp;&nbsp;
+			<a href="javascript:void();" onclick="location.href='#search?' + this.innerHTML">zbwr</a>&nbsp;&nbsp;
+			<a href="javascript:void();" onclick="location.href='#search?' + this.innerHTML">injyl</a>
+			<br>
+			<a href="javascript:void();" onclick="location.href='#search?' + this.innerHTML">Alqrnyn</a>&nbsp;&nbsp;
+			<a href="javascript:void();" onclick="location.href='#search?' + this.innerHTML">wAsHAq</a>&nbsp;&nbsp;
+			<a href="javascript:void();" onclick="location.href='#search?' + this.innerHTML">hArwn</a>
+			<br>
+			<a href="javascript:void();" onclick="location.href='#search?' + this.innerHTML">firEwn</a>&nbsp;
+			<a href="javascript:void();" onclick="location.href='#search?' + this.innerHTML">hAmAn</a>&nbsp;
+			<a href="javascript:void();" onclick="location.href='#search?' + this.innerHTML">qArwn</a>&nbsp;
+<small>			<br>
+			<a href="javascript:void();" onclick="location.href='#search?' + this.innerHTML">yAjwj;wmAjwj</a>&nbsp;
+			<a href="javascript:void();" onclick="location.href='#search?' + this.innerHTML">$Eyb;lwT;AlysE;</a>
+			<br>
+			<a href="javascript:void();" onclick="location.href='#search?' + this.innerHTML">yEqwb;AlAsbAT;Aywb;ywns</a>
+			<br>
+</small>
+			<a href="#search?Zfr;AZfrkm;lArjmnk;lnrjmnkm;lrjmnAk;">Zfr;lArjumank</a><br>
+			<a href="#search?Ajar">Ajar</a><br>
+			<a href="#search?fadamdama">fadamdama</a><br>
+			<pre>
+
+			</pre>
+		</div>
+	</div>
+
+
+	<div>
+		<div id="header">
+			<h2><span>
+					<span class="searchBox"><input id="edit" type="text" value="1,1" size="26" onclick="this.select()"/></span>
+					<span class="basmallah" onclick="location.href = '#';">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ </span>
+			</span></h2>
+			<!--<h3>Results</h3>-->
+		</div>
+		<div class="bbq-content mainbody"  id="content" style="word-wrap: break-word; padding-left: 10px; padding-right: 10px; zfloat: right; zdisplay: none;">
+					<!-- This will be shown while loading AJAX content. You'll want to get an image that suits your design at http://ajaxload.info/ -->
+			<div class="bbq-loading" style="display:none;">
+			  <img src="static/ajax-loader.gif" alt="Loading"/> Loading content...
+			</div>
+
+			<!-- Notes.txt: This content will be shown if no path is specified in the URL fragment. -->
+			<div class="bbq-default bbq-item" style="display: none;">
+				<PRE>Enter a Ayah reference or a search keyword; see examples on left. Ex:
+						- 55
+						- 2,255
+						- 114,2,1
+						- maryam, moHamad etc
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+				</PRE>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

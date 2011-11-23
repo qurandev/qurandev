@@ -1,0 +1,124 @@
+﻿<!doctype html> 
+<html>
+<head><meta http-equiv="X-UA-Compatible" content="IE=9"><meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>QuranDev.appSpot.com</title>
+<!--	<meta name="viewport" content="width=device-width;">--> <!-- initial-scale=1.0;maximum-scale=1.0; -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+	<link rel="stylesheet" href="static/css/blueprint/screen.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="static/css/blueprint/print.css" type="text/css" media="print" /> 
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" href="static/css/blueprint/ie.css" type="text/css" media="screen, projection">
+	<![endif]-->
+<!--	<link rel="stylesheet" type="text/css" href="static/css/smoothness/jquery-ui-1.8.13.custom.css" /> -->
+	<link rel="stylesheet" type="text/css" href="static/css/overcast/jquery-ui-1.8.13.custom.css" />
+	<link rel="stylesheet" type="text/css" href="static/js/VKB/keyboard.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/qSearchStyles.css" />
+	<link media="only screen and (max-device-width: 480px)"
+            href="static/css/iphone.css" type="text/css" rel="stylesheet" /> 
+	<link rel="stylesheet" type="text/css" href="static/jkmegamenu.css" />
+	<!-- <style>	</style> -->
+
+
+	<script type="text/javascript" src='static/js/jquery/jquery-1.5.1.min.js'></script>
+	<script type="text/javascript" src='static/js/jquery/jquery-ui-1.8.13.custom.min.js'></script>
+	<script type="text/javascript" src='static/js/jquery/jquery.livequery.min.js'></script>
+	<script type="text/javascript" src='static/js/jquery/jquery.highlight-3.js'></script> <!--
+	<script type="text/javascript" src='static/js/jquery/jQuery.spinTheWheel.js'></script> -->
+	<script type="text/javascript" src='static/js/quran-data.js'></script>
+	<script type="text/javascript" src='static/js/Q-Data.js'></script>
+	<script type="text/javascript" src='static/js/Q-SurasNavUI.js'></script>
+	<script type="text/javascript" src='static/js/Mapper.js'></script>
+	<script type="text/javascript" src='static/js/Utils.js'></script>
+	<script type="text/javascript" src='static/js/qSearchScripts.js'></script>
+	<!-- Virtual keyboard below -->
+	<script type="text/javascript" src="static/js/VKB/keyboard.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="static/jkmegamenu.js"></script>
+	<script type="text/javascript" src='static/js/jquery/jquery.easing.1.3.js'></script>
+	<!-- Goog analytics -->
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-23462050-1']);
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+</head>
+<body>
+	<!--<input width="8" type="text" value="Enter keyword" class="keyboardInput" id="search2"><br/>-->
+	<div id=mainform class=notice>
+
+
+	
+			<span class="leftBoxSubSurah">
+                     <select onchange="changeSurah(this.value);" style="width: 150px" "width:100%;" zsize="11">
+<option selected="selected" value="">Select a sura...</option><option value="1">1) Al-Fatihah</option><option value="2">2) Al-Baqarah</option><option value="3">3) 'Ali `Imran</option><option value="4">4) An-Nisa'</option><option value="5">5) Al-Ma'idah</option><option value="6">6) Al-'An`am</option><option value="7">7) Al-'A`raf</option><option value="8">8) Al-'Anfal</option><option value="9">9) At-Tawbah</option><option value="10">10) Yunus</option><option value="11">11) Hud</option><option value="12">12) Yusuf</option><option value="13">13) Ar-Ra`d</option><option value="14">14) 'Ibrahim</option><option value="15">15) Al-Hijr</option><option value="16">16) An-Nahl</option><option value="17">17) Al-'Isra'</option><option value="18">18) Al-Kahf</option><option value="19">19) Maryam</option><option value="20">20) Taha</option><option value="21">21) Al-'Anbya'</option><option value="22">22) Al-Haj</option><option value="23">23) Al-Mu'minun</option><option value="24">24) An-Nur</option><option value="25">25) Al-Furqan</option><option value="26">26) Ash-Shu`ara'</option><option value="27">27) An-Naml</option><option value="28">28) Al-Qasas</option><option value="29">29) Al-`Ankabut</option><option value="30">30) Ar-Rum</option><option value="31">31) Luqman</option><option value="32">32) As-Sajdah</option><option value="33">33) Al-'Ahzab</option><option value="34">34) Saba'</option><option value="35">35) Fatir</option><option value="36">36) Ya-Sin</option><option value="37">37) As-Saffat</option><option value="38">38) Sad</option><option value="39">39) Az-Zumar</option><option value="40">40) Ghafir</option><option value="41">41) Fussilat</option><option value="42">42) Ash-Shuraa</option><option value="43">43) Az-Zukhruf</option><option value="44">44) Ad-Dukhan</option><option value="45">45) Al-Jathiyah</option><option value="46">46) Al-'Ahqaf</option><option value="47">47) Muhammad</option><option value="48">48) Al-Fath</option><option value="49">49) Al-Hujurat</option><option value="50">50) Qaf</option><option value="51">51) Adh-Dhariyat</option><option value="52">52) At-Tur</option><option value="53">53) An-Najm</option><option value="54">54) Al-Qamar</option><option value="55">55) Ar-Rahman</option><option value="56">56) Al-Waqi`ah</option><option value="57">57) Al-Hadid</option><option value="58">58) Al-Mujadila</option><option value="59">59) Al-Hashr</option><option value="60">60) Al-Mumtahanah</option><option value="61">61) As-Saf</option><option value="62">62) Al-Jumu`ah</option><option value="63">63) Al-Munafiqun</option><option value="64">64) At-Taghabun</option><option value="65">65) At-Talaq</option><option value="66">66) At-Tahrim</option><option value="67">67) Al-Mulk</option><option value="68">68) Al-Qalam</option><option value="69">69) Al-Haqqah</option><option value="70">70) Al-Ma`arij</option><option value="71">71) Nuh</option><option value="72">72) Al-Jinn</option><option value="73">73) Al-Muzzammil</option><option value="74">74) Al-Muddaththir</option><option value="75">75) Al-Qiyamah</option><option value="76">76) Al-'Insan</option><option value="77">77) Al-Mursalat</option><option value="78">78) An-Naba'</option><option value="79">79) An-Nazi`at</option><option value="80">80) `Abasa</option><option value="81">81) At-Takwir</option><option value="82">82) Al-'Infitar</option><option value="83">83) Al-Mutaffifin</option><option value="84">84) Al-'Inshiqaq</option><option value="85">85) Al-Buruj</option><option value="86">86) At-Tariq</option><option value="87">87) Al-'A`la</option><option value="88">88) Al-Ghashiyah</option><option value="89">89) Al-Fajr</option><option value="90">90) Al-Balad</option><option value="91">91) Ash-Shams</option><option value="92">92) Al-Layl</option><option value="93">93) Ad-Duhaa</option><option value="94">94) Ash-Sharh</option><option value="95">95) At-Tin</option><option value="96">96) Al-`Alaq</option><option value="97">97) Al-Qadr</option><option value="98">98) Al-Bayyinah</option><option value="99">99) Az-Zalzalah</option><option value="100">100) Al-`Adiyat</option><option value="101">101) Al-Qari`ah</option><option value="102">102) At-Takathur</option><option value="103">103) Al-`Asr</option><option value="104">104) Al-Humazah</option><option value="105">105) Al-Fil</option><option value="106">106) Quraysh</option><option value="107">107) Al-Ma`un</option><option value="108">108) Al-Kawthar</option><option value="109">109) Al-Kafirun</option><option value="110">110) An-Nasr</option><option value="111">111) Al-Masad</option><option value="112">112) Al-'Ikhlas</option><option value="113">113) Al-Falaq</option><option value="114">114) An-Nas</option></select>
+						</span>	
+	
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	
+		<span>Search:</span> 
+		<input width="8" type="text" value="" placeholder="Search..." lang=ar class="keyboardInput" id="search" 
+		 onkeypress="if(event.keyCode == 13) { onSearch(); return false; }" style="width: 280px; line-height: 1.2em;  font-size: 1.5em;"> 
+		<input type="button" class="" value="Search" id="Go" >
+		&nbsp;&nbsp;&nbsp;
+		<a href="#" id="megaanchor">Search ideas...</a>
+		<!--Mega Drop Down Menu HTML. Retain given CSS classes-->
+		<div id="megamenu1" class="megamenu">
+		</div>
+
+	
+	
+		<span class='yamli'>
+			<a href="#" onclick="toggleYamli(); return false;"><img src='static/yamli.bmp' width=14 height=12 style='width= 14px; height=12px;' /></a>
+			<span style="margin-left: 2px;">&nbsp;</span>
+		</span>
+		<span class='suggest' id="suggest">&nbsp;</span> 
+		<span style="margin-left: 2px;">&nbsp;</span>
+		<span class='status' id=status>&nbsp;</span> 
+				
+		<div id="options2" style="float: right">
+			<ul id="displaymode">
+<!--			<li><a rel="fp" id="a" href="#" tip="Arabic" class="active">Arabic</a></li> -->
+				<li><a rel="fp" id="g" href="#" tip="Grammar" zclass="active">Grammar</a></li>
+				<li><a rel="fp" id="e" href="#" tip="Translation" class="active">Translation</a></li>
+				<li><a rel="fp" id="w" href="#" tip="Word by Word">Word by Word</a></li>
+				<li><a rel="fp" id="t" href="#" tip="Tajweed">Tajweed</a></li>
+				<li><a rel="fp" id="m" href="#" tip="Misc: Arabic indopak-script, no-tashkeel, Buck etc">Misc: indopak script, Buck etc</a></li>
+			</ul>
+
+			<span id=refinfo style="zfloat: right" zclass="success">
+				<span title="Reference number:">Ref #</span>
+				<input id=ref type=text style="width: 40px" value=""  />
+			</span>
+		</div>
+
+	</div>
+	
+
+						
+						
+	<div class=clear>&nbsp;</div>
+
+	<div id=placeholder ></div>	
+	<div id=debug>
+<!--		<div id=content1 class=""  style='overflow: scroll; display: block; float: right; position: relative'></div>
+		<div id=content2 class="" style='overflow: scroll; display: block; float: right; position: relative'></div> -->
+	</div>	
+	<script type="text/javascript">
+	</script>
+	
+	<!-- YAMLI CODE START -->
+	<script type="text/javascript" src="http://api.yamli.com/js/yamli_api.js"></script>
+	<script type="text/javascript">
+	  if (typeof(Yamli) == "object" && Yamli.init( { uiLanguage: "en" , startMode: "on" } )){ //off, offOrUserDefault
+		Yamli.yamlify( "", { settingsPlacement: "hide" } ); //hide or inside
+	  }
+	</script>
+	<!-- YAMLI CODE END -->
+</body>
+</html>

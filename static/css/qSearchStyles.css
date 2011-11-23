@@ -1,0 +1,338 @@
+.noorfont{
+	background-color: #BFF3BF;
+    border-left: 1px solid #A2EEA2;
+    font-family: noorehira;
+    font-size: 3em !important;
+    line-height: 2em !important;
+    padding: 0 10px 5px;
+}
+
+.suggest{
+    left: 270px !important;
+    top: 45px !important;
+    position: absolute !important;
+	white-space: nowrap;
+    Zbackground: none repeat scroll 0 0 #CCFB5D !important;
+}
+
+.search-bubble, .suggest {
+-webkit-box-shadow: 0 2px 2px #888;
+background-color: rgba(204, 251, 93, 0.8);
+border-radius: 6px;
+box-shadow: 0 2px 2px #888;
+margin: 12px 0 0;
+padding: 4px 10px;
+Zpointer-events: none;
+position: absolute;
+text-align: center;
+Zleft: 0;
+Ztop: -1000px;
+width: 100px;
+min-width: 100px;
+}
+
+.search-bubble::after , .suggest:after, .suggest::after{
+    Zbackground: none repeat scroll 0 0 #CCFB5D !important;
+border-color: rgba(204, 251, 93, 0.9) transparent;
+border-style: solid;
+border-width: 0 10px 10px;
+content: "";
+position: absolute;
+left: 50px;
+top: -10px;
+}
+/*  border-color: rgba(255, 240, 120, 0.9) transparent; YELLOW */
+
+
+ul#displaymode {list-style:none;float:left;margin-right:7px;}
+ul#displaymode li {float:left;}
+ul#displaymode a {display:block;width:30px;height:25px;background:url("../images/bg_displaymodes.gif") no-repeat;text-indent:-9999px;margin-left:-1px;}
+ul#displaymode a#a {background-position:0 0;}
+ul#displaymode a#a:hover {background-position:0 -50px;}
+ul#displaymode a#a.active,ul#displaymode a#a.active:hover {background-position:0 -25px;}
+ul#displaymode a#g {background-position:0 0;}
+ul#displaymode a#g:hover {background-position:0 -50px;}
+ul#displaymode a#g.active,ul#displaymode a#a.active:hover {background-position:0 -25px;}
+ul#displaymode a#e {background-position:-30px 0;}
+ul#displaymode a#e:hover {background-position:-30px -50px;}
+ul#displaymode a#e.active,ul#displaymode a#e.active:hover {background-position:-30px -25px;}
+ul#displaymode a#w {background-position:-60px 0;}
+ul#displaymode a#w:hover {background-position:-60px -50px;}
+ul#displaymode a#w.active,ul#displaymode a#w.active:hover {background-position:-60px -25px;}
+ul#displaymode a#t {background-position:-90px 0;}
+ul#displaymode a#t.active,ul#displaymode a#t.active:hover {background-position:-90px -25px;}
+ul#displaymode a#t:hover {background-position:-90px -50px;}
+ul#displaymode a#m {background-position:0 0;}
+ul#displaymode a#m:hover {background-position:0 -50px;}
+ul#displaymode a#m.active,ul#displaymode a#a.active:hover {background-position:0 -25px;}
+
+.ui-accordion .ui-accordion-header,
+.ui-accordion .ui-accordion-content
+{
+	margin-left: 8px;
+    margin-right: 8px;
+}
+.ui-accordion{
+	margin-bottom: 8px;
+}
+
+.label{
+	background-color: transparent !important;
+}
+.frame {
+	margin: 8px 8px 8px 8px;
+	margin-bottom: 10px;
+	clear: right;
+	width: 95%;
+	//height: 300px;
+	border: 1px solid #DDD;
+	overflow: auto;
+	position: relative;
+}
+
+.megamenu{
+	left: 25px !important;
+	top: 50px !important;
+}
+.aSpinner {
+    background-image: url("../overlay_vertical.png");  //overlay.png");
+	height: 227px;
+    width: 25px;
+}
+.aSpinnerHoriz {
+    background-image: url("../overlay.png");
+	width: 227px;
+    height: 25px;
+}
+	.aSpinner div, .aSpinnerHoriz div, .aSpinnerHoriz  span, .aSpinner span
+	{
+		font-family:arial,verdana,sans-serif;
+		color:#666666;
+		font-size:20px;
+		font-weight:bold;
+	}
+		.rtl{
+			direction: rtl !important;
+			text-direction: right !important;
+			word-spacing: 10px;
+			text-align: justify;
+			vertical-align: middle;
+		}
+
+table, th, td {
+    vertical-align: top !important; //middle;
+}
+<!--# optionsouter {
+	position: absolute;
+	top: 45px;
+	right: 25px;
+}-->
+
+
+.yamli{
+    left: 227px !important;
+    position: absolute !important;
+    top: 52px !important;
+}
+
+.status{
+    left: 170px !important;
+    position: absolute !important;
+    top: 70px !important;
+}
+.keyboardInputInitiator {
+    left: 400px !important;
+    position: absolute !important;
+    top: 46px !important;
+}
+.ayahBoxHeader {
+    line-height: 16px !important;
+    <!-- position: absolute !important; -->
+}
+
+.ayahBoxNum:hover, .hover {
+    background: none repeat scroll 0 0 #F1E0BE !important;
+}
+.ayahBoxNumLarge, .ayahBoxNumSmall, .ayahBoxNum {
+//	position: absolute;
+	float: left;
+	top: -10px;
+	left: -10px;
+    background: none repeat scroll 0 0 #FEF2DA !important;
+    border-radius: 10px 10px 10px 10px !important;
+    color: #D6B169 !important;
+    display: block !important;
+    font-size: 20px !important;
+    padding: 10px 8px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+}
+
+.ayahBoxNumLarge {
+    font-size: 20px !important;
+}
+.ayahBoxNum {
+    font-size: 120% !important;
+}
+.ayahBoxNumSmall {
+    font-size: 120% !important;
+    padding: 1px 15px !important;
+}
+
+.ayahBox1 {
+    background-color: #FFFFF2 !important;
+}
+.ayahBox1, .ayahBox2 {
+    border-bottom: 1px dotted #D4D4D4 !important;
+    padding: 10px 5px 10px 10px !important;
+}
+
+		.label {
+			background-color: #EEEEEE;
+			border-color: #E5E5E5 #5D5D5D #5D5D5D #E5E5E5;
+			border-radius: 0.2em 0.2em 0.2em 0.2em;
+			border-style: solid;
+			border-width: 1px;
+			cursor: default;
+			font-family: 'Lucida Console','Arial Unicode MS',monospace;
+			height: 1.8em;
+			min-width: 0.75em;
+			padding: 0 0.45em;
+			vertical-align: middle;
+			white-space: pre;
+		}
+		.arabic{ direction: rtl !important;		
+		}
+		.long{ width: 90%; margin: 1;
+		}
+		.small{ font-size: 7pt !important;
+		}
+		.normal{ font-size: 10pt !important;
+		}
+		.big{     font-size: 1.5em !important;
+		}
+		.biggerArabic{     font-size: 2.0em; !important
+		}
+		.bigger{     font-size: 2.5em !important;
+			border: 1; line-height: 50px; margin: 2; padding: 2;
+		}
+		.biggest{     font-size: 3.5em !important;
+		}
+		#sura{
+			width: 100% !important;
+			overflow-y: visible !important;
+		}
+		#surainfo{
+			padding: 0.0em !important;
+			margin-bottom: 0em !important;
+		}
+		.highlight { background-color: yellow }
+		.word2word { direction: rtl;
+		}
+		.wordpair{ margin-left: 35px;
+		}
+		.spacer{ margin-left: 50px;
+		}
+		.A{     font-size: 2.5em !important; direction: rtl !important;
+		}
+		.E{     font-size: 1em !important; direction: ltr !important;
+		}
+		.a{
+			display: block !important;
+			direction: rtl !important;		
+		}
+		.e{
+			display: block !important;
+			direction: ltr !important;
+		}
+		.a2{
+			direction: rtl !important;		
+		}
+		.e2{
+			direction: ltr !important;
+		}
+
+		/*GRMMAR RULES*/
+		.ACC {color:#FF7E1E;}
+		.NOM {color:#DD0008;}
+		.NOM:hover {background-color:#F3A6A9;color:#DD0008;cursor:pointer;}
+		.GEN {color:#169200;}
+		.grammar{ /*font-size: 2.5em; direction: rtl;*/
+		}
+		.GRMR{ max-height: 120px; overflow: auto;
+		}
+
+		/* .madda_normal:after, .ham_wasl:after, .slnt:after,  */
+		.tjwd > .ghn:after, .tjwd > .qlq:after, .tjwd > .idgh_ghn:after, .tjwd > .idgh_w_ghn:after, .tjwd > .iqlb:after, .tjwd > .ikhf:after, .tjwd > .ikhf_shfw:after, .tjwd > .madda_necessary:after, 
+		.tjwd > .madda_obligatory:after, .tjwd > .madda_permissible:after, .tjwd > .idgh_mus:after
+		{
+			content: "(" attr(class) ")";
+            position: relative;
+            font-size: .4em;
+			top: 20px;
+			left: 35px;
+			vertical-align: sub;			
+		}
+		
+		.tjwd{ position: relative;
+		}
+		
+		.ACC:after, .NOM:after, .GEN:after, .V:after, .N:after
+		{
+			content: "\200E(" attr(title) ")\200E";
+            position: relative;
+            font-size: .5em;
+			//top: 20px;
+			//left: 35px;
+			color: gray;
+			vertical-align: sub;
+		}
+		
+		/*TAJWEED RULES*/
+		.tajweed{ font-size: 2.5em; direction: rtl;
+				  padding: 0.1em !important; }
+		.word2word{ padding: 0.1em !important; }
+		.ghn {color:#FF7E1E;}
+		.qlq {color:#DD0008;}
+		.qlq:hover {background-color:#F3A6A9;color:#DD0008;cursor:pointer;}
+		.idgh_ghn {color:#169200;}
+		.idgh_ghn:hover {background-color:#9CE58E;color:#169200;cursor:pointer;}
+		.idgh_w_ghn {color:#169200;}
+		.idgh_w_ghn:hover {background-color:#9CE58E;color:#169200;cursor:pointer;}
+		.iqlb {color:#26BFFD;}
+		.iqlb:hover {background-color:#92E5FF;color:#0099C5;cursor:pointer;}
+		.ikhf {color:#9400A8;}
+		.ikhf:hover {background-color:#DAA6E1;color:#9400A8;cursor:pointer;}
+		.ikhf_shfw {color:#D500B7;}
+		.ikhf_shfw:hover {background-color:#F0A6E6;color:#D500B7;cursor:pointer;}
+		.idghm_shfw {color:#58B800;}
+		.idghm_shfw:hover {background-color:#BAE890;color:#58B800;cursor:pointer;}
+		.slnt {color:#AAAAAA;}
+		.ham_wasl {color:#AAAAAA;}
+		.ham_wasl:hover {background-color:#d7d7d7;}
+		.madda_necessary {color:#000EBC;}
+		.madda_obligatory {color:#2144C1;}
+		.madda_permissible {color:#4050FF;}
+		.madda_normal {color:#537FFF;}
+		.idgh_mus {color:#a1a1a1;}
+		.idgh_mus:hover {background-color:#d7d7d7;}
+		
+		.tooltip {display:none;background:transparent url(inc/images/bubble.png);font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:bold;width:146px;height:54px;padding:10px 10px 0 10px;margin:0 0 0 -21px;color:#FFFFFF;} 
+#tooltip {display:none;position:absolute;top:0px;left:0px;z-index:1000;}
+#tooltip table {border:none;}
+#tooltip .t .l {width:7px;height:7px;background:url("inc/images/bubble_sp.png") -27px 0 no-repeat;}
+#tooltip .t .c {height:7px;background:url("inc/images/bubble_tc.png") left top repeat-x;}
+#tooltip .t .r {width:7px;height:7px;background:url("inc/images/bubble_sp.png") -35px 0 no-repeat;}
+#tooltip .m .l {width:7px;background:url("inc/images/bubble_ml.png") left top repeat-y;}
+#tooltip .m .c {padding:2px;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:bold;color:#FFFFFF;white-space:pre;background:url("inc/images/bubble_mc.png") left top repeat;}
+#tooltip .m .r {width:7px;background:url("inc/images/bubble_mr.png") left top repeat-y;}
+#tooltip .b .l {width:7px;height:14px;background:url("inc/images/bubble_sp.png") 0 0 no-repeat;}
+#tooltip .b .s {width:13px;height:14px;background:url("inc/images/bubble_bc.png") left top repeat-x;}
+#tooltip .b .p {width:10px;height:14px;background:url("inc/images/bubble_sp.png") -8px 0 no-repeat;}
+#tooltip .b .c {font-size:1px;height:14px;background:url("inc/images/bubble_bc.png") left top repeat-x;}
+#tooltip .b .r {width:7px;height:14px;background:url("inc/images/bubble_sp.png") -19px 0 no-repeat;}
+
+
+@media screen and (max-device-width: 480px){
+    /* All iPhone only CSS goes here */
+}

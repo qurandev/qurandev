@@ -1,0 +1,33 @@
+Visualizing Quranic data from different websites in easy browser accessible, offline capable, iphone friendly webpages.
+
+- just html+js files; can be hosted on any server
+- works offline once data is cached. Great plus for using on iphone, ipad etc!
+- search works fast! keywords can be entered in Arabic, Buckwalter, Bare, transliteration etc.
+- its mashed up with data from other Quran sites. Ex: compare Uthmani and IndoPak mushaf.
+
+
+Try:
+index.html
+index2.html
+
+
+NOTE:
+These pages are research tools; not definitive resources. They have their quirks. The code could use some cleanup.
+You are welcome to take the idea, improve on it and host on your own site.
+
+
+
+Drop me a line at QuranDev@gmail
+
+
+
+
+
+
+
+Credits:
+====================================
+http://corpus.quran.com
+http://tanzil.net
+http://www.allahsquran.com/learn/
+and lot other websites. 

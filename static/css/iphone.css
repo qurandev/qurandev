@@ -1,0 +1,18 @@
+<!--
+body {
+    //width: 320px;
+    //font: 12pt Helvetica, sans-serif;
+} 
+
+img, table {
+    //max-width: 320px;
+} 
+#optionsouter{
+	//display: block; position: static; float: none;
+}
+-->
+
+.mobile_hidden {
+    display: none;
+} 
+
